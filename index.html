@@ -2,112 +2,117 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>ফারসি ভাষা ও সাহিত্য | চট্টগ্রাম বিশ্ববিদ্যালয়</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f4f7f5;color:#18352a}
-header{background:linear-gradient(135deg,#075e3d,#0b7a50);color:white;padding:32px 18px;text-align:center}
-header h1{margin:0 0 8px;font-size:30px}
-header p{margin:0;font-size:17px}
-nav{position:sticky;top:0;z-index:10;background:white;box-shadow:0 2px 10px #0002;display:flex;justify-content:center;gap:8px;padding:10px;flex-wrap:wrap}
-nav a{color:#075e3d;text-decoration:none;font-weight:bold;padding:10px 15px;border-radius:20px}
-nav a:hover{background:#e5f3ec}
-.container{max-width:1050px;margin:auto;padding:25px 15px}
-section{background:white;margin:18px 0;padding:25px;border-radius:18px;box-shadow:0 4px 18px #00000010}
-h2{color:#075e3d;border-left:5px solid #c99b2b;padding-left:12px}
-.teacher-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.teacher{border:1px solid #dfe9e3;border-radius:15px;padding:20px;background:#fbfdfc}
-.teacher .icon{font-size:42px}
-.teacher h3{margin:10px 0 6px;color:#075e3d}
-.teacher p{margin:5px 0}
-.notice{border-left:5px solid #c99b2b;background:#fffaf0;padding:16px;margin:12px 0;border-radius:8px}
-.date{color:#777;font-size:14px}
-.routine-box{text-align:center;background:#eef8f2;padding:22px;border-radius:15px}
-.btn{display:inline-block;background:#075e3d;color:white;text-decoration:none;padding:12px 18px;border-radius:9px;margin:6px;font-weight:bold}
-.btn.gold{background:#a77b18}
-iframe{width:100%;height:650px;border:1px solid #ddd;border-radius:12px;margin-top:18px}
-footer{text-align:center;background:#06452e;color:white;padding:25px;margin-top:30px}
-@media(max-width:600px){
-header h1{font-size:24px}
-section{padding:18px}
-iframe{height:500px}
-}
+*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans Bengali",Arial,sans-serif;background:#f3f6f2;color:#173d32}
+button,input{font:inherit}.hidden{display:none!important}
+.login-page{min-height:100vh;background:linear-gradient(120deg,#063d31dd,#075b48cc),url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1800&q=80") center/cover;display:flex;align-items:center;justify-content:center;padding:25px}
+.login-card{width:min(430px,100%);background:#f8f6edee;border-radius:24px;padding:30px;box-shadow:0 20px 60px #0008;text-align:center;border:2px solid #c8a45d}
+.logo{width:100px;height:100px;border-radius:50%;margin:auto;background:#fff;display:flex;align-items:center;justify-content:center;border:5px solid #c9a45b;color:#075845;font-size:52px;font-weight:bold}
+.login-card h1{font-size:25px;margin:14px 0 5px;color:#075845}.login-card p{margin:5px 0 22px}.arabic{font-size:22px;color:#a67c27;margin:10px}
+.field{position:relative;margin:12px 0}.field input{width:100%;padding:15px 16px;border:1px solid #b9c6bf;border-radius:11px;background:#fff}.login-btn{width:100%;padding:14px;border:0;border-radius:11px;background:#075845;color:#fff;font-weight:bold;cursor:pointer;font-size:17px}.hint{font-size:13px;color:#666;margin-top:14px}.error{color:#a21f1f;font-size:14px;margin:8px}
+.app{min-height:100vh;background:#f4f6f3}.top{height:72px;background:#064c3b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 25px}.brand{display:flex;align-items:center;gap:12px;font-weight:bold}.mini-logo{width:48px;height:48px;border:2px solid #d4b76d;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px}.userbar{display:flex;align-items:center;gap:15px}.logout{border:1px solid #d7c07b;background:transparent;color:#fff;border-radius:8px;padding:8px 12px;cursor:pointer}
+.layout{display:flex;min-height:calc(100vh - 72px)}.side{width:245px;background:#073f33;color:#fff;padding:20px 14px}.side a{display:block;color:#fff;text-decoration:none;padding:15px 16px;border-radius:12px;margin:6px 0}.side a:hover,.side a.active{background:#18725a}.content{flex:1;padding:25px;max-width:1200px;margin:auto;width:100%}
+.hero{background:linear-gradient(90deg,#075845ee,#075845aa),url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1600&q=80") center/cover;color:#fff;border-radius:20px;padding:45px 35px;margin-bottom:22px}.hero h1{font-size:34px;margin:0 0 8px}.hero p{margin:5px 0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 16px #00000012;border-top:4px solid #c4a158}.card .ico{font-size:32px}.card h3{margin:10px 0 5px}.card a{color:#075845;font-weight:bold;text-decoration:none}
+.panel{background:#fff;border-radius:16px;padding:22px;margin-top:20px;box-shadow:0 4px 16px #00000010}.panel h2{margin-top:0;color:#075845;border-left:5px solid #c4a158;padding-left:10px}
+.notice{display:flex;gap:15px;padding:14px 5px;border-bottom:1px solid #e2e8e3}.notice:last-child{border:0}.datebox{min-width:65px;background:#eaf4ef;border-radius:10px;text-align:center;padding:8px;font-weight:bold;color:#075845}
+.teachers{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.teacher{padding:20px;border:1px solid #dbe5df;border-radius:14px;background:#fbfdfb}.teacher-icon{font-size:42px}.teacher h3{color:#075845;margin:8px 0}.teacher p{margin:4px 0}
+.routine iframe{width:100%;height:650px;border:1px solid #ddd;border-radius:12px}.download{display:inline-block;margin:10px 0 15px;padding:11px 16px;background:#075845;color:#fff;text-decoration:none;border-radius:9px}
+.footer{background:#063d31;color:#fff;text-align:center;padding:20px;margin-top:30px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.side{width:205px}}
+@media(max-width:650px){.top{padding:0 12px}.brand span{font-size:13px}.layout{display:block}.side{width:100%;display:flex;overflow:auto;padding:8px}.side a{white-space:nowrap;padding:10px}.content{padding:12px}.hero{padding:30px 20px}.hero h1{font-size:25px}.cards{grid-template-columns:1fr 1fr}.userbar .welcome{display:none}.routine iframe{height:500px}}
 </style>
 </head>
 <body>
 
-<header>
-<h1>ফারসি ভাষা ও সাহিত্য</h1>
-<p>চট্টগ্রাম বিশ্ববিদ্যালয়</p>
+<div id="loginPage" class="login-page">
+<div class="login-card">
+<div class="logo">ف</div>
+<div class="arabic">گروه زبان و ادبیات فارسی</div>
+<h1>চট্টগ্রাম বিশ্ববিদ্যালয়</h1>
+<p>ফারসি ভাষা ও সাহিত্য বিভাগ</p>
+<form id="loginForm">
+<div class="field"><input id="username" placeholder="ইউজারনেম" required></div>
+<div class="field"><input id="password" type="password" placeholder="পাসওয়ার্ড" required></div>
+<div id="loginError" class="error"></div>
+<button class="login-btn">↪ লগ ইন</button>
+</form>
+<div class="hint">Demo login: <b>admin</b> / <b>1234</b></div>
+</div>
+</div>
+
+<div id="app" class="app hidden">
+<header class="top">
+<div class="brand"><div class="mini-logo">ف</div><span>চট্টগ্রাম বিশ্ববিদ্যালয় ·<br>ফারসি ভাষা ও সাহিত্য বিভাগ</span></div>
+<div class="userbar"><span class="welcome">স্বাগতম, Maruf Rahman</span><button class="logout" onclick="logout()">↪ লগ আউট</button></div>
 </header>
-
-<nav>
-<a href="#teachers">👨‍🏫 শিক্ষক পরিচিতি</a>
-<a href="#routine">📚 Class Routine</a>
-<a href="#notice">📢 Notice Board</a>
-</nav>
-
-<main class="container">
-
-<section id="teachers">
-<h2>👨‍🏫 শিক্ষক পরিচিতি</h2>
-<div class="teacher-grid">
-
-<div class="teacher">
-<div class="icon">👨‍🏫</div>
-<h3>১. আলতাফ হোসেন</h3>
-<p><b>পদবি:</b> অধ্যাপক</p>
+<div class="layout">
+<aside class="side">
+<a class="active" href="#home">🏠 হোম</a>
+<a href="#notice">🔔 নোটিশ</a>
+<a href="#routine">📅 রুটিন</a>
+<a href="#exam">📄 পরীক্ষার রুটিন</a>
+<a href="#teachers">👥 সম্মানিত শিক্ষকবৃন্দ</a>
+</aside>
+<main class="content" id="home">
+<div class="hero">
+<p>چট্টগ্রাম বিশ্ববিদ্যালয়</p>
+<h1>ফারসি ভাষা ও সাহিত্য বিভাগ</h1>
+<p class="arabic">گروه زبان و ادبیات فارسی</p>
+<p>“دانش، روشنی راه زندگی است”</p>
 </div>
 
-<div class="teacher">
-<div class="icon">👩‍🏫</div>
-<h3>২. আসমা আক্তার</h3>
-<p><b>পদবি:</b> অধ্যাপক</p>
+<div class="cards">
+<div class="card"><div class="ico">🔔</div><h3>নোটিশ</h3><p>সর্বশেষ নোটিশ দেখুন</p><a href="#notice">দেখুন →</a></div>
+<div class="card"><div class="ico">📅</div><h3>রুটিন</h3><p>ক্লাস রুটিন দেখুন</p><a href="#routine">দেখুন →</a></div>
+<div class="card"><div class="ico">📄</div><h3>পরীক্ষার রুটিন</h3><p>পরীক্ষার সময়সূচি দেখুন</p><a href="#exam">দেখুন →</a></div>
+<div class="card"><div class="ico">👥</div><h3>শিক্ষকবৃন্দ</h3><p>বিভাগের শিক্ষকদের তথ্য</p><a href="#teachers">দেখুন →</a></div>
 </div>
 
-</div>
+<section id="notice" class="panel">
+<h2>📢 সর্বশেষ নোটিশ</h2>
+<div class="notice"><div class="datebox">২০<br><small>সেপ্টে</small></div><div><b>শিক্ষাবর্ষ ২০২৫-২৬ এর প্রথম বর্ষের ক্লাস সংক্রান্ত বিজ্ঞপ্তি</b><p>বিভাগীয় সর্বশেষ নোটিশের তথ্য এখানে প্রকাশ করা হবে।</p></div></div>
+<div class="notice"><div class="datebox">১৮<br><small>সেপ্টে</small></div><div><b>বিভাগীয় একাডেমিক কার্যক্রম সংক্রান্ত নোটিশ</b><p>নতুন নোটিশের বিস্তারিত এখানে যুক্ত করা যাবে।</p></div></div>
 </section>
 
-<section id="routine">
-<h2>📚 Class Routine</h2>
-<div class="routine-box">
-<h3>Class Routine 2026</h3>
+<section id="routine" class="panel routine">
+<h2>📚 Class Routine 2026</h2>
 <p>১ম, ২য়, ৩য়, ৪র্থ বর্ষ ও M.A. শ্রেণির ক্লাস রুটিন</p>
-<a class="btn" href="class-routine-2026.pdf" target="_blank">📄 Routine দেখুন</a>
-<a class="btn gold" href="class-routine-2026.pdf" download>⬇️ PDF Download</a>
-</div>
-<iframe src="class-routine-2026.pdf" title="Class Routine 2026"></iframe>
+<a class="download" href="class-routine-2026.pdf" target="_blank">📄 Routine দেখুন</a>
+<a class="download" href="class-routine-2026.pdf" download>⬇ PDF Download</a>
+<iframe src="class-routine-2026.pdf"></iframe>
 </section>
 
-<section id="notice">
-<h2>📢 Notice Board</h2>
-
-<div class="notice">
-<b>📢 বিভাগীয় নোটিশ</b><br>
-<span class="date">তারিখ: এখানে যোগ করুন</span>
-<p>নতুন বিভাগীয় নোটিশের তথ্য এখানে প্রকাশ করা হবে।</p>
-</div>
-
-<div class="notice">
-<b>📚 ক্লাস রুটিন সংক্রান্ত নোটিশ</b><br>
-<span class="date">তারিখ: এখানে যোগ করুন</span>
-<p>ক্লাস রুটিনের পরিবর্তন বা নতুন রুটিনের তথ্য এখানে প্রকাশ করা হবে।</p>
-</div>
-
-<div class="notice">
-<b>🎓 পরীক্ষা ও একাডেমিক কার্যক্রম</b><br>
-<span class="date">তারিখ: এখানে যোগ করুন</span>
-<p>পরীক্ষা, সেমিনার ও অন্যান্য একাডেমিক কার্যক্রমের তথ্য এখানে প্রকাশ করা হবে।</p>
-</div>
-
+<section id="exam" class="panel">
+<h2>📄 পরীক্ষার রুটিন</h2>
+<p>পরীক্ষার সময়সূচি এখানে প্রকাশ করা হবে।</p>
 </section>
+
+<section id="teachers" class="panel">
+<h2>👨‍🏫 সম্মানিত শিক্ষকবৃন্দ</h2>
+<div class="teachers">
+<div class="teacher"><div class="teacher-icon">👨‍🏫</div><h3>আলতাফ হোসেন</h3><p><b>পদবি:</b> অধ্যাপক</p></div>
+<div class="teacher"><div class="teacher-icon">👩‍🏫</div><h3>আসমা আক্তার</h3><p><b>পদবি:</b> অধ্যাপক</p></div>
+</div>
+</section>
+
+<div class="footer">চট্টগ্রাম বিশ্ববিদ্যালয় | ফারসি ভাষা ও সাহিত্য বিভাগ<br>© 2026 Department Website</div>
 </main>
+</div>
+</div>
 
-<footer>
-<p>ফারসি ভাষা ও সাহিত্য বিভাগ | চট্টগ্রাম বিশ্ববিদ্যালয়</p>
-<p>© 2026 Department Website</p>
-</footer>
-
+<script>
+const loginPage=document.getElementById("loginPage"),app=document.getElementById("app");
+function showApp(){loginPage.classList.add("hidden");app.classList.remove("hidden")}
+function logout(){app.classList.add("hidden");loginPage.classList.remove("hidden")}
+document.getElementById("loginForm").addEventListener("submit",e=>{
+e.preventDefault();
+const u=document.getElementById("username").value.trim(),p=document.getElementById("password").value;
+if(u==="admin"&&p==="1234"){document.getElementById("loginError").textContent="";showApp()}
+else document.getElementById("loginError").textContent="ইউজারনেম অথবা পাসওয়ার্ড সঠিক নয়।";
+});
+</script>
 </body>
 </html>
