@@ -4,127 +4,109 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ফারসি ভাষা ও সাহিত্য | চট্টগ্রাম বিশ্ববিদ্যালয়</title>
-<meta name="description" content="ফারসি ভাষা ও সাহিত্য বিভাগ, চট্টগ্রাম বিশ্ববিদ্যালয়">
 <style>
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Noto Sans Bengali","Nirmala UI",Arial,sans-serif;background:#f5f8f6;color:#18352a;line-height:1.7}
-header{background:linear-gradient(135deg,#075e3d,#0b7a4f);color:#fff;padding:42px 18px 34px;text-align:center}
-.logo{width:72px;height:72px;border:2px solid #d8b45a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:38px;color:#f5d77c;font-family:serif}
-header h1{margin:0;font-size:clamp(28px,6vw,44px);font-weight:800}
-header p{margin:5px 0 0;font-size:clamp(16px,3vw,21px);opacity:.95}
-nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 12px #00000014;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px}
-nav a{text-decoration:none;color:#075e3d;font-weight:700;padding:8px 13px;border-radius:20px}
-nav a:hover{background:#e9f4ee}
-.container{max-width:1050px;margin:auto;padding:25px 16px}
-.hero{background:#fff;border-radius:20px;padding:28px;text-align:center;box-shadow:0 8px 30px #12452b12;margin-bottom:25px}
-.hero h2{margin:0 0 8px;color:#075e3d}
-.hero p{margin:0;color:#53655d}
-.section{margin:25px 0}
-.section h2{color:#075e3d;text-align:center;margin-bottom:18px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 6px 22px #12452b10;border:1px solid #e3eee8}
-.card h3{margin-top:0;color:#075e3d}
-.notice{background:#fff;border-left:5px solid #d8b45a;border-radius:12px;padding:17px;margin:12px 0;box-shadow:0 4px 15px #12452b0c}
+body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f4f7f5;color:#18352a}
+header{background:linear-gradient(135deg,#075e3d,#0b7a50);color:white;padding:32px 18px;text-align:center}
+header h1{margin:0 0 8px;font-size:30px}
+header p{margin:0;font-size:17px}
+nav{position:sticky;top:0;z-index:10;background:white;box-shadow:0 2px 10px #0002;display:flex;justify-content:center;gap:8px;padding:10px;flex-wrap:wrap}
+nav a{color:#075e3d;text-decoration:none;font-weight:bold;padding:10px 15px;border-radius:20px}
+nav a:hover{background:#e5f3ec}
+.container{max-width:1050px;margin:auto;padding:25px 15px}
+section{background:white;margin:18px 0;padding:25px;border-radius:18px;box-shadow:0 4px 18px #00000010}
+h2{color:#075e3d;border-left:5px solid #c99b2b;padding-left:12px}
+.teacher-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.teacher{border:1px solid #dfe9e3;border-radius:15px;padding:20px;background:#fbfdfc}
+.teacher .icon{font-size:42px}
+.teacher h3{margin:10px 0 6px;color:#075e3d}
+.teacher p{margin:5px 0}
+.notice{border-left:5px solid #c99b2b;background:#fffaf0;padding:16px;margin:12px 0;border-radius:8px}
 .date{color:#777;font-size:14px}
-.routine-box{background:linear-gradient(135deg,#075e3d,#0a7b50);color:white;border-radius:20px;padding:30px;text-align:center;box-shadow:0 10px 28px #075e3d30}
-.routine-box h2{color:white;margin:0 0 8px}
-.routine-box p{opacity:.93;margin:0 0 20px}
-.btn{display:inline-block;text-decoration:none;border-radius:30px;padding:12px 22px;font-weight:800;margin:5px;transition:.2s}
-.btn-gold{background:#d8b45a;color:#173728}
-.btn-light{background:#fff;color:#075e3d}
-.btn:hover{transform:translateY(-2px);box-shadow:0 5px 14px #0003}
-.link-list a{display:block;background:#f7fbf8;color:#075e3d;text-decoration:none;padding:12px 15px;border-radius:10px;margin:8px 0;font-weight:700}
-.link-list a:hover{background:#e7f3ec}
-footer{background:#083f2b;color:#dcebe4;text-align:center;padding:25px 15px;margin-top:30px}
-.small{font-size:14px;opacity:.85}
-@media(max-width:600px){header{padding:30px 14px}.container{padding:18px 12px}.hero,.routine-box{padding:22px 16px}nav a{font-size:14px;padding:6px 9px}}
+.routine-box{text-align:center;background:#eef8f2;padding:22px;border-radius:15px}
+.btn{display:inline-block;background:#075e3d;color:white;text-decoration:none;padding:12px 18px;border-radius:9px;margin:6px;font-weight:bold}
+.btn.gold{background:#a77b18}
+iframe{width:100%;height:650px;border:1px solid #ddd;border-radius:12px;margin-top:18px}
+footer{text-align:center;background:#06452e;color:white;padding:25px;margin-top:30px}
+@media(max-width:600px){
+header h1{font-size:24px}
+section{padding:18px}
+iframe{height:500px}
+}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">ف</div>
-  <h1>ফারসি ভাষা ও সাহিত্য</h1>
-  <p>চট্টগ্রাম বিশ্ববিদ্যালয়</p>
+<h1>ফারসি ভাষা ও সাহিত্য</h1>
+<p>চট্টগ্রাম বিশ্ববিদ্যালয়</p>
 </header>
 
 <nav>
-  <a href="#home">হোম</a>
-  <a href="#notice">নোটিশ</a>
-  <a href="#routine">ক্লাস রুটিন</a>
-  <a href="#links">গুরুত্বপূর্ণ লিংক</a>
-  <a href="#contact">যোগাযোগ</a>
+<a href="#teachers">👨‍🏫 শিক্ষক পরিচিতি</a>
+<a href="#routine">📚 Class Routine</a>
+<a href="#notice">📢 Notice Board</a>
 </nav>
 
 <main class="container">
 
-<section id="home" class="hero">
-  <h2>ফারসি ভাষা ও সাহিত্য বিভাগে স্বাগতম</h2>
-  <p>চট্টগ্রাম বিশ্ববিদ্যালয়ের ফারসি ভাষা ও সাহিত্য বিভাগের তথ্য, নোটিশ ও একাডেমিক কার্যক্রমের অনলাইন প্ল্যাটফর্ম।</p>
+<section id="teachers">
+<h2>👨‍🏫 শিক্ষক পরিচিতি</h2>
+<div class="teacher-grid">
+
+<div class="teacher">
+<div class="icon">👨‍🏫</div>
+<h3>১. আলতাফ হোসেন</h3>
+<p><b>পদবি:</b> অধ্যাপক</p>
+</div>
+
+<div class="teacher">
+<div class="icon">👩‍🏫</div>
+<h3>২. আসমা আক্তার</h3>
+<p><b>পদবি:</b> অধ্যাপক</p>
+</div>
+
+</div>
 </section>
 
-<section id="notice" class="section">
-  <h2>📢 নোটিশ বোর্ড</h2>
-  <div class="notice">
-    <b>📢 বিভাগীয় নোটিশ</b><br>
-    <span class="date">তারিখ: এখানে যোগ করুন</span><br>
-    সর্বশেষ বিভাগীয় নোটিশের শিরোনাম এখানে প্রকাশ করুন।
-  </div>
-  <div class="notice">
-    <b>📚 ক্লাস রুটিন</b><br>
-    <span class="date">তারিখ: ২০২৬</span><br>
-    ১ম, ২য়, ৩য় ও ৪র্থ বর্ষ এবং M.A. ২০২৬-এর ক্লাস রুটিন নিচে দেখুন।
-  </div>
-  <div class="notice">
-    <b>🎓 পরীক্ষা ও একাডেমিক কার্যক্রম</b><br>
-    <span class="date">তারিখ: এখানে যোগ করুন</span><br>
-    পরীক্ষা, সেমিনার বা অন্যান্য একাডেমিক কার্যক্রমের তথ্য এখানে দিন।
-  </div>
+<section id="routine">
+<h2>📚 Class Routine</h2>
+<div class="routine-box">
+<h3>Class Routine 2026</h3>
+<p>১ম, ২য়, ৩য়, ৪র্থ বর্ষ ও M.A. শ্রেণির ক্লাস রুটিন</p>
+<a class="btn" href="class-routine-2026.pdf" target="_blank">📄 Routine দেখুন</a>
+<a class="btn gold" href="class-routine-2026.pdf" download>⬇️ PDF Download</a>
+</div>
+<iframe src="class-routine-2026.pdf" title="Class Routine 2026"></iframe>
 </section>
 
-<section id="routine" class="section">
-  <div class="routine-box">
-    <h2>📚 Class Routine 2026</h2>
-    <p>Department of Persian Language &amp; Literature — University of Chittagong</p>
-    <a class="btn btn-gold" href="class-routine-2026.pdf" target="_blank" rel="noopener">📄 Routine দেখুন</a>
-    <a class="btn btn-light" href="class-routine-2026.pdf" download>⬇️ PDF Download</a>
-  </div>
-</section>
+<section id="notice">
+<h2>📢 Notice Board</h2>
 
-<section class="section">
-  <h2>📖 একাডেমিক ক্ষেত্র</h2>
-  <div class="cards">
-    <div class="card"><h3>ফারসি ভাষা</h3><p>ফারসি ভাষার পাঠ, ব্যাকরণ, অনুবাদ ও ভাষাচর্চা।</p></div>
-    <div class="card"><h3>ফারসি সাহিত্য</h3><p>প্রাচীন ও আধুনিক ফারসি সাহিত্য, কবিতা, গদ্য ও সাহিত্য-সমালোচনা।</p></div>
-    <div class="card"><h3>গবেষণা</h3><p>ফারসি ভাষা, সাহিত্য, সংস্কৃতি ও সংশ্লিষ্ট বিষয়ে গবেষণার সুযোগ।</p></div>
-  </div>
-</section>
+<div class="notice">
+<b>📢 বিভাগীয় নোটিশ</b><br>
+<span class="date">তারিখ: এখানে যোগ করুন</span>
+<p>নতুন বিভাগীয় নোটিশের তথ্য এখানে প্রকাশ করা হবে।</p>
+</div>
 
-<section id="links" class="section">
-  <h2>🔗 গুরুত্বপূর্ণ লিংক</h2>
-  <div class="link-list">
-    <a href="https://cu.ac.bd/" target="_blank" rel="noopener">🏛️ চট্টগ্রাম বিশ্ববিদ্যালয় — অফিসিয়াল ওয়েবসাইট</a>
-    <a href="#notice">📢 বিভাগীয় নোটিশ</a>
-    <a href="#routine">📚 Class Routine 2026</a>
-    <a href="#contact">☎️ যোগাযোগ</a>
-  </div>
-</section>
+<div class="notice">
+<b>📚 ক্লাস রুটিন সংক্রান্ত নোটিশ</b><br>
+<span class="date">তারিখ: এখানে যোগ করুন</span>
+<p>ক্লাস রুটিনের পরিবর্তন বা নতুন রুটিনের তথ্য এখানে প্রকাশ করা হবে।</p>
+</div>
 
-<section id="contact" class="section">
-  <h2>📞 যোগাযোগ</h2>
-  <div class="card">
-    <p><b>বিভাগ:</b> ফারসি ভাষা ও সাহিত্য</p>
-    <p><b>বিশ্ববিদ্যালয়:</b> চট্টগ্রাম বিশ্ববিদ্যালয়</p>
-    <p class="small">অফিসিয়াল ফোন, ই-মেইল ও কক্ষ নম্বর যাচাই করে এখানে যোগ করুন।</p>
-  </div>
-</section>
+<div class="notice">
+<b>🎓 পরীক্ষা ও একাডেমিক কার্যক্রম</b><br>
+<span class="date">তারিখ: এখানে যোগ করুন</span>
+<p>পরীক্ষা, সেমিনার ও অন্যান্য একাডেমিক কার্যক্রমের তথ্য এখানে প্রকাশ করা হবে।</p>
+</div>
 
+</section>
 </main>
 
 <footer>
-  <div>© 2026 ফারসি ভাষা ও সাহিত্য বিভাগ, চট্টগ্রাম বিশ্ববিদ্যালয়</div>
-  <div class="small">Department Information Website</div>
+<p>ফারসি ভাষা ও সাহিত্য বিভাগ | চট্টগ্রাম বিশ্ববিদ্যালয়</p>
+<p>© 2026 Department Website</p>
 </footer>
 
 </body>
