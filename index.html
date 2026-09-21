@@ -24,6 +24,16 @@ button,input{font:inherit}.hidden{display:none!important}
 @media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.side{width:205px}}
 @media(max-width:650px){.top{padding:0 12px}.brand span{font-size:13px}.layout{display:block}.side{width:100%;display:flex;overflow:auto;padding:8px}.side a{white-space:nowrap;padding:10px}.content{padding:12px}.hero{padding:30px 20px}.hero h1{font-size:25px}.cards{grid-template-columns:1fr 1fr}.userbar .welcome{display:none}.routine iframe{height:500px}}
 </style>
+
+<style>
+.external-links{background:#fff;padding:22px;border-radius:16px;margin-top:20px;box-shadow:0 4px 16px #0001}
+.external-links a{display:inline-block;margin:6px;padding:11px 16px;border-radius:9px;color:#fff;text-decoration:none;font-weight:bold;background:#1769aa}
+.external-links a.cucsu{background:#9a6b13}
+.photo-upload{background:#fff;padding:22px;border-radius:16px;margin-top:20px;box-shadow:0 4px 16px #0001}
+.photo-upload-box{border:2px dashed #9bbbad;border-radius:14px;padding:22px;text-align:center;background:#f7fbf8}
+.photo-upload button{border:0;background:#075845;color:#fff;padding:11px 18px;border-radius:9px;font-weight:bold;cursor:pointer}
+.photo-preview{display:none;max-width:100%;max-height:350px;margin:16px auto 0;border-radius:12px}
+</style>
 </head>
 <body>
 
@@ -99,6 +109,24 @@ button,input{font:inherit}.hidden{display:none!important}
 </section>
 
 <div class="footer">চট্টগ্রাম বিশ্ববিদ্যালয় | ফারসি ভাষা ও সাহিত্য বিভাগ<br>© 2026 Department Website</div>
+
+<section class="external-links" id="important-links">
+<h2>🔗 গুরুত্বপূর্ণ লিংক</h2>
+<a href="https://www.cu.ac.bd/" target="_blank" rel="noopener">🏛️ CU Official Website</a>
+<a class="cucsu" href="https://cucsu.cu.ac.bd/" target="_blank" rel="noopener">🎓 CUCSU Official Website</a>
+</section>
+
+<section class="photo-upload" id="photo-upload">
+<h2>📷 সবার জন্য ছবি আপলোড</h2>
+<div class="photo-upload-box">
+<p>যে কেউ ছবি নির্বাচন করে Preview দেখতে পারবে।</p>
+<input id="photoFile" type="file" accept="image/*">
+<br><br>
+<button type="button" onclick="previewPhoto()">📤 ছবি নির্বাচন করুন</button>
+<p id="photoStatus"></p>
+<img id="photoPreview" class="photo-preview" alt="ছবির Preview">
+</div>
+</section>
 </main>
 </div>
 </div>
@@ -113,6 +141,20 @@ const u=document.getElementById("username").value.trim(),p=document.getElementBy
 if(u==="admin"&&p==="1234"){document.getElementById("loginError").textContent="";showApp()}
 else document.getElementById("loginError").textContent="ইউজারনেম অথবা পাসওয়ার্ড সঠিক নয়।";
 });
+</script>
+
+<script>
+function previewPhoto(){
+ const input=document.getElementById('photoFile');
+ const status=document.getElementById('photoStatus');
+ const img=document.getElementById('photoPreview');
+ const file=input.files[0];
+ if(!file){status.textContent='আগে একটি ছবি নির্বাচন করুন।';return;}
+ if(!file.type.startsWith('image/')){status.textContent='শুধু ছবি নির্বাচন করুন।';return;}
+ img.src=URL.createObjectURL(file);
+ img.style.display='block';
+ status.textContent='ছবি নির্বাচন হয়েছে।';
+}
 </script>
 </body>
 </html>

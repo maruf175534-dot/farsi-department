@@ -1,9 +1,9 @@
-ভার্সন ২ — ফারসি ভাষা ও সাহিত্য, চট্টগ্রাম বিশ্ববিদ্যালয়
+Website update:
+- CU Official Website: https://www.cu.ac.bd/
+- CUCSU Official Website: https://cucsu.cu.ac.bd/
+- Added a public photo-selection/preview option.
 
-GitHub Pages:
-1. নতুন Public repository তৈরি করুন।
-2. এই ফোল্ডারের index.html আপলোড করুন।
-3. Settings → Pages → Deploy from a branch → main → /(root) → Save।
-4. প্রকাশিত URL থেকে সাইট দেখুন।
-
-প্রকাশের আগে অফিসিয়াল শিক্ষক তালিকা, নোটিশ, ই-মেইল, ফোন ও অন্যান্য তথ্য যাচাই করে যুক্ত করুন।
+Important:
+GitHub Pages is a static host. It cannot permanently store images uploaded by arbitrary visitors by itself.
+For a real public upload system where everyone's photos are saved online and visible in a gallery, a storage/backend such as Firebase, Supabase, or Cloudinary must be connected.
+The current option lets visitors select an image and preview it. Permanent public upload requires that storage connection.
